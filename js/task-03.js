@@ -12,3 +12,12 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+const list = document.querySelector('ul');
+
+const addImage = images
+  .map((img) => `<li><img src="${img.url}" alt="${img.alt}"} ></li>`)
+  .join("");
+
+list.insertAdjacentHTML("beforeend", addImage);
+
+console.log(list)
