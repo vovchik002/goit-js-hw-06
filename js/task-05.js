@@ -3,8 +3,6 @@ let spanOutput = document.querySelector('span');
 
 inputAction.addEventListener("input", (event) => {
     spanOutput.textContent = event.currentTarget.value;
+    if (event.currentTarget.value === ''){spanOutput.textContent = "Anonymous" }
 });
-
-if (spanOutput.textContent.length === 0){spanOutput.textContent = "Anonymous" }
-
 
