@@ -1,10 +1,9 @@
-let inputAction = document.querySelector('input');
-let spanOutput = document.querySelector('span'); 
 
-inputAction.addEventListener("input", (event) => {
-    spanOutput.textContent = event.currentTarget.value;
-});
+ const inputRangeRef = document.querySelector("#font-size-control");
+const inputTextRef = document.querySelector("#text");
 
-if (spanOutput.textContent.length === 0){spanOutput.textContent = "Anonymous" }
+const handleInput = () => {
+  inputTextRef.style.fontSize = `${inputRangeRef.value}px`;
+};
 
-
+inputRangeRef.addEventListener("input", handleInput);
