@@ -12,7 +12,4 @@ ingredients.forEach (ingredient =>{const addNameIngredients = document.createEle
   addNameIngredients.textContent = ingredient;
   addNameIngredients.class = "item"
   list.append(addNameIngredients);
-  console.log(addNameIngredients.textContent)
-  console.log(addNameIngredients.class)
-  
 })
