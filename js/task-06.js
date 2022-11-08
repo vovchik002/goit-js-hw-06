@@ -6,7 +6,11 @@ console.log(lenghtInput)
 function onBlur(event) {
   if (textInput.value.length === lenghtInput) {
     textInput.classList.add("valid")
-  } else { textInput.classList.add("invalid") }
+    textInput.classList.remove("invalid")
+  } else {
+    textInput.classList.remove("valid");
+    textInput.classList.add("invalid")
+  }
   
   console.log(textInput.value.length)
 }
