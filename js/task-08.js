@@ -1,5 +1,5 @@
 const form = document.querySelector('.login-form');
-
+const buttonSubmit = document.querySelector('button')
 
 form.addEventListener("submit", testForm);
 
@@ -14,7 +14,7 @@ const formData = new FormData(event.currentTarget);
       alert('Всі поля повинні бути заповнені!');
       return;
     }
-    console.log(data);
-    
+    console.log(data); 
+    event.currentTarget.reset()
 }
 
